@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main{
+            width: 350px;
+            height: 616px;
+            border: 1px solid black;
+            position: relative;
+            top: -545px;
+            left: 13px;
+        }
+        .fa-bars, .title, .missed{
+            display: inline-block;
+        }
+
+        .title{
+            margin-left: 50px;
+
+        }
+
+        .missed{
+            margin-left: 90px;
+            position: relative;
+            top:5px;
+        }
+        .photo{
+            width: 350px;
+            height: 300px;
+            /* border: 1px solid black; */
+            background-color: antiquewhite;
+        }
+        form{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        input{
+            width: 270px;
+            position: relative;
+            left: 10px;
+            border-top: 1px;
+            border-left: 1px;
+            border-right: 1px;
+            z-index: -1;
+            margin-top: 20px;
+        }
+
+        .fa-pen{
+            z-index: 1;
+        }
+
+        li{
+            display: inline-block;
+            margin-top: 12px;
+            color:rgba(238, 159, 62, 0.922);
+        }
+
+        ul{
+            /* border: 1px solid black; */
+            height: 50px;
+            margin-top: 30px;
+            background-color:rgb(132, 128, 128);
+        }
+        .btn1{
+           
+            margin-left: 10px;
+        }
+        .btn2{
+            margin-left: 60px;
+        }
+        span{
+            border-right: 3px solid black;
+            margin-left: 55px;
+            border-color: rgb(222, 126, 47);
+            font-weight: bold;
+            line-height: 50px;
+            
+        }
+        i{
+            color:rgba(238, 159, 62, 0.922);
+        }
+
+        .main2{
+            width: 350px;
+            height: 616px;
+            border: 1px solid black;
+            background-color: rgb(236, 251, 236);
+        }
+        .fa-bars, .title1, .missed1{
+            display: inline-block;
+        }
+
+        .title1{
+            margin-left: 80px;
+
+        }
+
+        .missed1{
+            margin-left: 90px;
+            position: relative;
+            top:5px;
+        }
+        
+        .main, .main2{
+            display: inline-block;
+        }
+
+        .main2{
+            margin-left: 80px;
+            margin-top: 10px;
+            
+        }
+
+        .container{
+            height: 635px;
+            width: 800px;
+            border: 2px solid black;
+            margin: 50px auto;
+        }
+        .pick1, .pick2{
+            display: inline-block;
+            margin-left: 50px; 
+            margin-top: -5px;   
+        }
+        .pick2{
+            margin-left: 100px;
+            width: 175px;
+            height: 50px;
+            position: relative;
+            top: -51px;
+            left: 75px;
+            background-color: rgb(200, 149, 247);
+
+        }
+        .pick{
+            position: relative;
+            top: -560px;
+            /* border: 1px solid black;  */
+            width: 349px; 
+            height: 50px; 
+            z-index: 1; 
+            background-color: rgb(246, 238, 238) ;
+        }
+
+        .box{
+            /* border: 1px solid black; */
+            width: 320px;
+            height: 70px;
+            margin-left: 15px;
+            background-color: white;
+            text-align: center;
+            margin-top: -60px;
+            opacity: 0.8;
+        }
+       
+        .next{
+            width: 330px;
+            height: 40px;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin-left: 10px;
+            margin-top: 330px;
+            background-color: rgb(200, 149, 247);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <i style="margin-top: 20px; margin-left: 30px; font-size: 20px;" class="fa-solid fa-bars"></i>
+        <h3 class="title">My account </h3>
+        <img class="missed" width="30px" src="data:image/png;base64,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" alt="">
+    
+        <div class="photo">
+        <img width="350px" style="margin-top: 15px;" src="https://i.pinimg.com/originals/dd/47/03/dd47030667e24581715e2b7dbb85d32d.png" alt="">
+        </div>
+    <form action="">
+        <label for="phone"><i class="fa-solid fa-mobile"></i></label>
+        <input type="tel" id="phone" name="Phone" placeholder="+91 8994856546" ><i style="color: black;" class="fa-solid fa-pen"></i> <br> <br>
+        <label for="email"><i class="fa-solid fa-envelope"></i></label>
+        <input type="email" id="email" name="Email" placeholder="test@gmail.com"><i style="color: black;" class="fa-solid fa-pen"></i> <br> <br>
+        <label for="pwd"><i class="fa-solid fa-key"></i></label>
+        <input type="password" id="pwd" name="password" placeholder="*******"><i style="color: black;" class="fa-solid fa-pen"></i>
+    </form>
+    <ul>
+        <li class="btn btn1">LOGOUT</li><span></span>
+        <li class="btn btn2">SAVE</li>
+    </ul>
+    </div>
+
+    <div class="main2">
+        <i style="margin-top: 20px; margin-left: 30px; font-size: 20px;" class="fa-solid fa-bars"></i>
+        <h3 class="title1">Book now</h3>
+        <img class="missed1" style="opacity: 0.8;" width="30px" src="data:image/png;base64,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" alt="">
+    
+        <div style="z-index: -1;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3018027247053!2d78.39954787462925!3d17.49310079975219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91625d9cd1ad%3A0x4455387ad24a675d!2s10000coders!5e0!3m2!1sen!2sin!4v1704351479985!5m2!1sen!2sin" width="349" height="555" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="pick">
+            <div class="pick1">
+                <h4>PICKUP</h4>
+            </div>
+           <div class="pick2">
+            <h4 style="position: relative; top: -5px; left: 50px;">DROP OFF</h4>
+           </div> 
+        
+        <div class="box">
+            <p style="position: relative; top: 15px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aliquam!</p>
+        </div>
+        
+        <form action="" style="margin-left: 1px; margin-top: -10px; opacity: 0.9;">
+            <input type="date" name="date" id="date" style="height: 40px; border-bottom: 1px; width: 180px;">
+            <input type="time" name="time" id="time" style="height: 40px; width: 140px; border-bottom: 1px; margin-left: 30px; position: relative; top: -60px; left: 170px;">
+        </form>
+        
+        <div class="next">
+            <h3 style="position: relative; top: 10px; color: rgb(76, 21, 21);">Next</h3>
+        </div>
+        </div>
+    
+</div>
+</body>
+</html>
